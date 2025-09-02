@@ -17,7 +17,7 @@ jobs:
 
       # Step 3: Compile C code
       - name: Compile UDP Flooder C
-        run: gcc -o test m.c -lpthread
+        run: gcc -o test m.c -lpthread -lrt
 
       # Step 4: Install Python 3
       - name: Setup Python
